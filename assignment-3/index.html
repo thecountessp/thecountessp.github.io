@@ -7,11 +7,41 @@
     <meta name="description" content="Coursework" />
     <meta name="author" content="Paula Healy" />
     <title>Assignment 3 - UX Flow Charts</title>
-    <!-- Stylesheet-->
+    <!--STYLESHEET-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- Favicon-->
+    <!--FAVICON-->
     <link rel="icon" type="image/x-icon" href="components/favicon.ico" />
+    <!--ICONS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .zoom {
+            padding: 50px;
+            transition: transform .2s;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+        }
+
+        .zoom:hover {
+            -ms-transform: scale(2);
+            /* IE 9 */
+            -webkit-transform: scale(2);
+            /* Safari 3-8 */
+            transform: scale(2);
+        }
+
+        #btn-back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,32 +72,144 @@
 
     <!--MAIN HEADING-->
     <div class="p-3 mb-2 bg-danger text-center text-white"><strong>Assignment 3 - UX Flow Charts</strong></div>
-    <br>
+
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fa fa-arrow-up"></i>
+    </button>
     <br>
     <!--PAPER SKETCHES-->
-    <div id="sketches" class="container mt-1 mb-4">
+    <div id="sketches" class="container mt-4 mb-4">
         <h1>UX Sketches</h1>
 
         <div class="row" id="gallery">
             <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="components/Scan One.jpg">
+                <img class="zoom" src="components/Scan One.jpg">
             </div>
             <div class="col-12 col-sm-6 col-lg-3">
-              <img class="w-100" src="components/Scan Two.jpg">
+                <img class="zoom" src="components/Scan Two.jpg">
             </div>
-          </div>
+        </div>
 
     </div>
 
     <!--USE CASES-->
     <div id="useCases" class="container mt-1 mb-4">
         <h1>UX Flow Use Cases</h1>
-        <iframe width="1047" height="1474" src="https://xd.adobe.com/embed/fa4e1d27-2064-49fc-ab26-fd5aa8455b6b-af1d/" frameborder="2" allowfullscreen></iframe>
+        <iframe width="1047" height="1474" src="https://xd.adobe.com/embed/fa4e1d27-2064-49fc-ab26-fd5aa8455b6b-af1d/"
+            frameborder="2" allowfullscreen></iframe>
     </div>
 
-    <!--USE CASES-->
-    <div id="useCases" class="container mt-1 mb-4">
+    <!--DOCUMENTATION-->
+    <div id="documentation" class="container mt-1 mb-4">
         <h1>Documentation</h1>
+        <p class="lead">
+            FilmFreeway is a multipage website/web application with a filterable database of international film
+            festivals, and a film-maker project submission portal.
+            Due to the specificity of the user requirements, there are unlikely to be many <i>indirect competitors</i>,
+            rather
+            a number of <i>direct competitors</i> (Nunes and Pratt, 76).</p>
+        <br>
+        There are a number of film festival submission portals in addition to FilmFreeway, such as Withoutabox,
+        Reelport, Shortfilmdepot, Clickforfestivals, Festhome, Movibeta, Uptofest, Filmfestivallife and Filmfestplatform
+        (Review: 10 Platforms for Online Submissions, 2017) to name some of the most popular. It would be helpful when
+        redesigning the site, or appraising it to test the design and UX of these sites.
+        <br>
+        <br>
+        <strong>Users</strong><br>
+        I have identified a number of personae or archetype users;<br>
+        <ol>
+            <li>A film festival organiser/director.</li>
+            <li>A filmmaker doing the rounds of this year’s film festivals.</li>
+            <li>A new user, that doesn’t have a film project finished yet, but is investigating the process of
+                submitting
+                films to festivals, and what kind of festivals there are.</li>
+            <li>A member of the public that is particularly interested in international film festivals.</li>
+        </ol>
+        <br>
+        <blockquote class="blockquote">
+            <p class="mb-4">it is important to understand some basic information about your users, such as age,
+                education, and background. What is their technical competency and familiarity with the technology you
+                are designing?</p>
+            <footer class="blockquote-footer">(Nunes and Pratt, 2012)</footer>
+        </blockquote>
+        <br>
+        <strong>User Information</strong><br>
+        Before proceeding to sketch the UX Flow for this website, I considered the kinds of people likely to use the
+        website. This site would not be used by members of the general public, even those avid filmgoers that may use
+        Letterboxd or IMDb. This site, instead is for people involved in the filmmaking and festival industries. What
+        can we suppose from this? There would be a level of technical knowhow on both sides, as filmmakers would use
+        digital technologies to create and edit their work, and festivals would use online services to maintain their
+        online presence, publish updates and schedules and sell tickets for screenings. In addition, the majority of
+        users are coming to the site for relatively focussed reasons; they either have a project to submit or edit, or
+        they are looking for projects to screen.
+        It follows that while the site needs to follow good user interaction and visual communication principles, there
+        would likely be no need for basic wizards, induction and handholding. It is noted that while the project
+        submission form is lengthy, it is not a general internet user that will be completing it, but rather someone
+        that is an expert in their field, one that knows their project exhaustively and has specific motivations to
+        complete the process of submission.
+        <br>
+        <br>
+        <blockquote class="blockquote">
+            <p class="mb-4">applications have multiple “rooms” (in UX design we call them pages or modes), that contain
+                specific information or functionality.</p>
+            <footer class="blockquote-footer">(Nunes and Pratt, 2012)</footer>
+        </blockquote>
+        <br>
+        <strong>Site Modes</strong><br>
+        This site has two primary modes; one for filmmakers submitting projects to festivals, and the other, which is
+        not covered in this document, for festivals to display their pertinent information and receive submissions. The
+        user signs up as a festival or filmmaker at the creation of their account, which establishes what site modes
+        they will encounter throughout their usage of the site.<br>
+        <br>
+        <strong>Use Case Scenarios (see UX flow chart for steps in each scenario)</strong><br>
+        <ol>
+            <li>The user tries to submit a film to a festival without having a film in their FilmFreeway
+                account.</li>
+            <li>The user searches for festivals that accept music videos and successfully submits their project to a
+                film festival which asks them to make a fee payment.</li>
+            <li>The user changes the poster image of one of their projects.</li>
+            <li>The user looks for festivals that don't require an application fee.</li>
+            <li>The user withdraws from a festival submission.</li>
+        </ol>
+        <br>
+        As each of these scenarios are task-based, as opposed to exploratory or entertainment related, I thought it more
+        appropriate to have horizontal linear flows. These UX flows move from left to right, save only when the user
+        encounters a roadblock or exception flow. It was also unnecessary to utilise swim lanes (Cronenwett, section
+        2.4) as
+        there were few, if any parallel flows. I created each of the elements (figure 1) in Adobe XD; the user, termini
+        (outset, conclusion and exception flows or fail cases), actions, decisions, single webpages, page stacks to
+        indicate multiple pages of similarly formatted information, files, flow lines, and for this project, a dashed
+        contingent flow line indicating that a user could not proceed to the next step without completing the previous
+        action.<br>
+        <br>
+        <img class="img-fluid" src="components/UX Key Crop.png" alt="UX Key" width="90%">
+        <br>
+        <br>
+        The requirement to log in occurred so frequently, that I created a separate User Flow diagram for this process.
+        I selected colours for the terminators and exception flows that in themselves indicate the stage of progress;
+        green for start/go, red for stop/error and blue for success. A diamond has typically been used in UX and UML for
+        decisions, and the octagon for actions is common, and also helps to visually differentiate actions and decisions
+        from each other and other elements. In scenario one, the user cannot submit a film to a film festival, as they
+        do not have a project added. I represented the project submission stages faded out, as they are inaccessible at
+        that time. Unlike the ability to login due to not having been registered or having forgotten credentials, which
+        is solvable for the user there and then, not having a project leads to a dead end. Finally I made a funnel and
+        pencil to specifically indicate the ability of the user to search and narrow down festival listings to a subset
+        and edit files.
+        <br>
+        <br>
+        <h4>Sources Cited</h4>
+        <ul>
+            <li>Cronenwett, D. (2020, March 10). Flow and process diagrams - Interaction Design: Flow. LinkedIn.
+                Retrieved March 15, 2022, from <a
+                    href="https://www.linkedin.com/learning/interaction-design-flow/flow-and-process-diagrams">linkedin.com</a>
+            </li>
+
+            <li>Nunes, J., & Pratt, A. (2012). Interactive Design: An Introduction to the Theory and Application of
+                User-centered Design (1st Ed.). Rockport Publishers.</li>
+
+            <li>Review: 10 platforms for online submissions. (2017, January 8). Festagent. Retrieved March 19, 2022,
+                from <a href="https://festagent.com/en/articles/online-services-en">festagent.com</a></li>
+        </ul>
     </div>
 
 
@@ -89,6 +231,32 @@
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="sidebars.js"></script>
-</body>
 
+    <!--TOP OF PAGE BUTTON-->>
+    <script>
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
