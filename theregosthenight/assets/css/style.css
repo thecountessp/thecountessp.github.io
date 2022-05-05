@@ -10,16 +10,17 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #777;
+  color: rgb(218, 218, 218);
+  background-color: #160E33;
 }
 
 a {
   text-decoration: none;
-  color: #43aea0;
+  color: #adadad;
 }
 
 a:hover {
-  color: #00d3b8;
+  color: #0054d3;
   text-decoration: none;
 }
 
@@ -35,7 +36,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f2f9f8;
+  background-color: #160E33;
 }
 
 .section-title {
@@ -47,7 +48,7 @@ section {
   font-weight: 300;
   margin-bottom: 20px;
   padding-bottom: 0;
-  color: #555;
+  color: rgb(218, 218, 218);
 }
 .section-title p {
   margin-bottom: 0;
@@ -86,7 +87,7 @@ section {
 .breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
-  color: #6c757d;
+  color: #6c6f7d;
   content: "/";
 }
 @media (max-width: 768px) {
@@ -111,7 +112,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #70b9b0;
+  background: #CC95C9;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -139,10 +140,10 @@ section {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: #2d6760;
+  background: #1e2149;
 }
 #header.header-scrolled {
-  background: #1d443f;
+  background: #0d091b;
   height: 60px;
 }
 #header .logo h1 {
@@ -194,7 +195,7 @@ section {
   padding: 10px 0 10px 30px;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  color: #d2ece9;
+  color: #d5d2ec;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -228,13 +229,13 @@ section {
   text-transform: none;
   font-size: 14px;
   font-weight: 500;
-  color: #25564f;
+  color: #7F6387;
 }
 .navbar .dropdown ul a i {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -289,7 +290,7 @@ section {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(7, 56, 57, 0.9);
+  background: rgba(7, 12, 57, 0.9);
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -312,10 +313,10 @@ section {
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #073839;
+  color: #0c0739;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -341,7 +342,7 @@ section {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -360,7 +361,7 @@ section {
 }
 #hero:before {
   content: "";
-  background: rgba(112, 185, 176, 0.85);
+  background: rgba(157, 148, 194, 0.85);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -407,8 +408,8 @@ section {
 }
 #hero .btn-get-started:hover {
   background: #fff;
-  color: #70b9b0;
-  border: 1px solid #70b9b0;
+  color: #CC95C9;
+  border: 1px solid #CC95C9;
 }
 @media (min-width: 1024px) {
   #hero {
@@ -444,7 +445,7 @@ section {
 .about ul i {
   font-size: 22px;
   padding-right: 4px;
-  color: #70b9b0;
+  color: #CC95C9;
   line-height: 0;
 }
 .about p:last-child {
@@ -464,7 +465,7 @@ section {
   margin-bottom: 15px;
 }
 .services .icon i {
-  color: #70b9b0;
+  color: #72977b;
   font-size: 42px;
 }
 .services .title {
@@ -474,11 +475,11 @@ section {
   text-transform: uppercase;
 }
 .services .title a {
-  color: #343a40;
+  color: #83b6c5;
   transition: 0.3s;
 }
 .services .icon-box:hover .title a {
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .services .description {
   line-height: 24px;
@@ -489,7 +490,7 @@ section {
 # Call To Action
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(1, 41, 42, 0.5), rgba(7, 56, 57, 0.5)), url("../img/call-to-action-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(15, 1, 42, 0.5), rgba(7, 56, 57, 0.5)), url("../img/call-to-action-bg.jpg") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -515,8 +516,8 @@ section {
   color: #fff;
 }
 .call-to-action .cta-btn:hover {
-  background: #70b9b0;
-  border: 2px solid #70b9b0;
+  background: #CC95C9;
+  border: 2px solid #CC95C9;
 }
 
 /*--------------------------------------------------------------
@@ -546,14 +547,14 @@ section {
   transition: all 0.3s ease-in-out;
 }
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #70b9b0;
+  background: #CC95C9;
   color: #fff;
 }
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
 .portfolio .portfolio-wrap {
-  background: #073839;
+  background: #0f0739;
   overflow: hidden;
   min-height: 200px;
   position: relative;
@@ -586,7 +587,7 @@ section {
   margin: 4px;
 }
 .portfolio .portfolio-wrap .portfolio-info a i:hover {
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .portfolio .portfolio-wrap:hover img {
   opacity: 0.4;
@@ -615,10 +616,10 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #70b9b0;
+  border: 1px solid #CC95C9;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #70b9b0;
+  background-color: #CC95C9;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -675,7 +676,7 @@ section {
   font-weight: 400;
   padding-left: 25px;
   cursor: pointer;
-  color: #51a59b;
+  color: #5159a5;
   transition: 0.3s;
 }
 .faq .faq-list i {
@@ -692,10 +693,10 @@ section {
   display: none;
 }
 .faq .faq-list .collapsed {
-  color: #343a40;
+  color: #9aa4ad;
 }
 .faq .faq-list .collapsed:hover {
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .faq .faq-list .collapsed .icon-show {
   display: inline-block;
@@ -740,11 +741,11 @@ section {
   margin-top: 15px;
 }
 .team .member .social a {
-  color: #92cac3;
+  color: #9293ca;
   transition: 0.3s;
 }
 .team .member .social a:hover {
-  color: #3c8b81;
+  color: #3c3d8b;
 }
 .team .member .social i {
   font-size: 18px;
@@ -761,7 +762,7 @@ section {
   line-height: 1;
   font-weight: 500;
   letter-spacing: 1px;
-  color: #70b9b0;
+  color: #CC95C9;
 }
 .contact .contact-about p {
   font-size: 14px;
@@ -778,17 +779,17 @@ section {
   justify-content: center;
   font-size: 16px;
   background: #fff;
-  color: #70b9b0;
+  color: #CC95C9;
   line-height: 0;
   margin-right: 4px;
   border-radius: 50%;
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  border: 1px solid #70b9b0;
+  border: 1px solid #CC95C9;
 }
 .contact .social-links a:hover {
-  background: #70b9b0;
+  background: #CC95C9;
   color: #fff;
 }
 .contact .info {
@@ -796,7 +797,7 @@ section {
 }
 .contact .info i {
   font-size: 32px;
-  color: #70b9b0;
+  color: #CC95C9;
   float: left;
   line-height: 1;
 }
@@ -848,14 +849,14 @@ section {
   font-size: 14px;
 }
 .contact .php-email-form button[type=submit] {
-  background: #70b9b0;
+  background: #CC95C9;
   border: 0;
   padding: 10px 24px;
   color: #fff;
   transition: 0.4s;
 }
 .contact .php-email-form button[type=submit]:hover {
-  background: #92cac3;
+  background: #9892ca;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -890,7 +891,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #073839;
+  background: #33311E;
   padding: 30px 0;
   color: #fff;
   font-size: 14px;
