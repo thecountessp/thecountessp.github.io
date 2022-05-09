@@ -310,7 +310,7 @@ pre code {
 
 code {
   font-size: 0.875em;
-  color: #d63384;
+  color: #ffffff;
   word-wrap: break-word;
 }
 a > code {
@@ -347,7 +347,7 @@ table {
 caption {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  color: #6c757d;
+  color: #7a7a7a;
   text-align: left;
 }
 
@@ -2063,15 +2063,15 @@ progress {
 }
 
 .table-primary {
-  --bs-table-bg: #cfe2ff;
-  --bs-table-striped-bg: #c5d7f2;
+  --bs-table-bg: #d1d1d1;
+  --bs-table-striped-bg: #cfcfcf;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #bacbe6;
+  --bs-table-active-bg: #cfcfcf;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #bfd1ec;
+  --bs-table-hover-bg: #cfcfcf;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #bacbe6;
+  border-color: #cfcfcf;
 }
 
 .table-secondary {
@@ -2102,12 +2102,12 @@ progress {
   --bs-table-bg: #cff4fc;
   --bs-table-striped-bg: #c5e8ef;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #badce3;
+  --bs-table-active-bg: #cfcfcf;
   --bs-table-active-color: #000;
   --bs-table-hover-bg: #bfe2e9;
   --bs-table-hover-color: #000;
   color: #000;
-  border-color: #badce3;
+  border-color: #cfcfcf;
 }
 
 .table-warning {
@@ -2262,15 +2262,15 @@ progress {
   height: 1.5em;
 }
 .form-control::-moz-placeholder {
-  color: #6c757d;
+  color: #7a7a7a;
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #6c757d;
+  color: #797979;
   opacity: 1;
 }
 .form-control::placeholder {
-  color: #6c757d;
+  color: #828283;
   opacity: 1;
 }
 .form-control:disabled, .form-control[readonly] {
@@ -4971,7 +4971,7 @@ textarea.form-control-lg {
 
 .alert-primary {
   color: #084298;
-  background-color: #cfe2ff;
+  background-color: #cfcfcf;
   border-color: #b6d4fe;
 }
 .alert-primary .alert-link {
@@ -5318,11 +5318,11 @@ textarea.form-control-lg {
 
 .list-group-item-primary {
   color: #084298;
-  background-color: #cfe2ff;
+  background-color: #cfcfcf;
 }
 .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
   color: #084298;
-  background-color: #bacbe6;
+  background-color: #cfcfcf;
 }
 .list-group-item-primary.list-group-item-action.active {
   color: #fff;
@@ -5364,7 +5364,7 @@ textarea.form-control-lg {
 }
 .list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
   color: #055160;
-  background-color: #badce3;
+  background-color: #cfcfcf;
 }
 .list-group-item-info.list-group-item-action.active {
   color: #fff;
