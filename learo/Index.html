@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Léaro Documentary Festival</title>
+  <!--Favicon-->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!--Bootstrap Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+
+  <!--Footer Social Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Bebas Webfont-->
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+    body {
+      font-family: Helvetica, Arial, "sans-serif";
+      font-size: 1rem;
+      line-height: 1.5;
+      text-align: left;
+      color: white;
+      background-color: #08021e;
+      border: none;
+    }
+
+    h1 {
+      font-family: "Bebas Neue", 'Arial Narrow', sans-serif;
+      font-size: 2rem;
+      letter-spacing: 1.8;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFED90;
+    }
+
+    h3 {
+      font-family: "Bebas-Neue", 'Arial Narrow', sans-serif;
+      text-transform: uppercase;
+      color: #FFED90;
+    }
+
+    h4 {
+      font-family: "Bebas Neue", 'Arial Narrow', sans-serif;
+      font-size: 1.6rem;
+      padding: 1.4rem;
+      text-transform: uppercase;
+      text-align: center;
+      color: #FFED90;
+    }
+
+    a:link {
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .navbar {
+      color: #FFED90;
+      background-color: #08021e;
+      column-span: all;
+      list-style-type: none;
+      text-align: left;
+    }
+
+    label,
+    input {
+      display: flex;
+      flex-direction: column;
+    }
+
+    div {
+      display: block;
+      color: white;
+      background-color: #08021e;
+    }
+
+    p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      background-color: #08021e;
+    }
+
+
+    .column {
+      flex: 25%;
+      max-width: 20%;
+      padding: 4px;
+      margin: 5px;
+    }
+
+    .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 80%;
+    }
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 75px;
+      align-items: center;
+      text-decoration: none;
+      margin: 5px 2px;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .fa-twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #cb351a;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg=" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">Who we are</h4>
+            <p class="text-muted">A new repertory documentary film festival for the West of Ireland. In the heart of the
+              community over the 3 shortest, darkest days of the year. We're taking the showings out of the cinema and
+              into
+              centres and libraries around county Galway. This is the first iteration of what we hope becomes a time to
+              meet and be transported to exotic or warmer climes when the Irish nights are at their
+              longest (and wettest!).</p>
+          </div>
+
+          <!--CONTACT FORM-->
+
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mbjwrgbl"
+              method="post">
+              <fieldset id="fs-frm-inputs">
+                <label for="full-name">Full Name</label>
+                <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+                <label for="email-address">Email Address</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+                <label for="message">Message</label>
+                <textarea rows="5" name="message" id="message" placeholder="Give us a shout" required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+              </fieldset>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--SITE NAVIGATION-->
+
+    <div class="navbar navbar-dark align-items-left">
+      <div class="container">
+        <strong>Léaro Docummentary Festival | Dec 20-22</strong>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Programme</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#programmeSelection">Programme Seclection</a></li>
+            <li><a class="dropdown-item" href="#shorts">Shorts</a></li>
+            <li><a class="dropdown-item" href="#irishMade">Irish-Made</a></li>
+            <li><a class="dropdown-item" href="#familyFriendly">Family Friendly</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#timetable"><i class="bi bi-calendar-week m-1"></i>Full Timetable</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sponsors">Sponsors</a></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+    </div>
+  </header>
+
+  <!--CAROUSEL-->
+
+  <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/carousel_1.png" class="d-block w-100" alt="Léaro Festival Banner">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel_2.png" class="d-block w-100" alt="Irish-Made Documentaries">
+        </div>
+        <div class="carousel-item">
+          <img src="images/carousel_3.png" class="d-block w-100" alt="Classic Documentaries">
+        </div>
+      </div>
+      <!--CAROUSEL CONTROLS-->
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!--ABOUT SECTION-->
+
+  <h1 id="about" class="display-6 text-center m-4">About</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>
+          A new repertory documentary film festival for the West of Ireland. In the heart of the community
+          over the 3 shortest, darkest days of the year. We're taking the showings out of the cinema and into
+          centres and libraries around county Galway.
+        </p>
+        <p>We have carfeully selected the inaugural offerings - there is something for everyone.
+          Family-friendly, subtitled, audio description and Irish-made are noted on each listing, so you can
+          choose a showing to suit you. Each of the venues is fully accessible, with disabled parking. We'll
+          be providing each attendee with a hot beverage - included with your ticket. Other snacks and treats will be
+          available to purchase at each venue.</p>
+      </div>
+      <div class="col-md-6">
+        <img class="mx-auto pt-3 d-block" width=80% src="images/community.jpg" alt="community hall">
+      </div>
+    </div>
+  </div>
+
+  <!--PROGRAMME-->
+
+  <div class="container">
+    <div id="programme" class="row">
+      <div class="col-12">
+        <h1 class="display-6 text-center m-4">Léaro Programme</h1>
+      </div>
+    </div>
+
+    <!--PROGRAMME SELECTION-->
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item" id="accordionOne">
+        <h2 class="accordion-header" id="programmeSelection">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Programme Selection
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="programmeSelection"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row">
+
+              <!--FILM ONE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Amy</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-amy.jpg">
+                  <br><strong>Director: Asif Kapadia</strong>
+                  <br>UK 2015 2h 08m
+                  <br>English (Unrated)
+                  <br>Archival footage and personal testimonials present an intimate portrait of the life
+                  and career of British singer/songwriter Amy Winehouse. A documentary on the life of
+                  Amy Winehouse, the immensely talented yet doomed songstress. We see her from her
+                  teen years, where she already showed her singing abilities, to her finding success
+                  and then her downward spiral into alcoholism and drugs.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#AmyTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="AmyTrailer" tabindex="-1" aria-labelledby="AmyTrailer" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="AmyTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Za3lZcrzzcM"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM TWO-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Senna</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-senna.jpg">
+                  <br><strong>Director: Asif Kapadia</strong>
+                  <br>UK/USA 2010 1h 46m
+                  <br>English (12A)
+                  <br>The story of the monumental life and tragic death of legendary Brazilian motor-racing Champion,
+                  Ayrton Senna. Spanning the decade from his arrival in Formula One in the mid 80's, the film follows
+                  Senna's struggles both on track against his nemesis, French World Champion Alain Prost, and off it,
+                  against the politics which infest the sport. Years on he is revered in Formula One as the greatest
+                  motor racing driver of all time - and in Brasil as a Saint.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#SennaTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="SennaTrailer" tabindex="-1" aria-labelledby="SennaTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="SennaTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QOQLeqRcgKc"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM THREE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Waltz with Bashir</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-bashir.jpg">
+                  <br><strong>Director: Ari Folman</strong>
+                  <br>Israel 2008 1h 30m
+                  <br>Hebrew & English (18)
+                  <br>
+                  One night at a bar, an old friend tells director Ari about a recurring nightmare in which he is chased
+                  by 26 vicious dogs. Every night, the same number of beasts. The two men conclude that there's a
+                  connection to their Israeli Army mission in the first Lebanon War of the early eighties. Ari is
+                  surprised that he can't remember a thing anymore about that period of his life. As Ari delves deeper
+                  and deeper into the mystery, his memory begins to creep up in surreal images.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#BashirTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="BashirTrailer" tabindex="-1" aria-labelledby="BashirTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="BashirTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ylzO9vbEpPg"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <!--FILM FOUR-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Faces, Places</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-places.jpg">
+                  <br><strong>Directors: JR & Agnès Varda</strong>
+                  <br>France 2017 1hr 34m
+                  <br>French (12A)
+                  <br>Agnès Varda, one of the leading lights of France's honored French New Wave cinema
+                  era, and professional photographer and muralist, J.R., partake on a special art
+                  project. Together, they travel around France in a special box truck equipped as a
+                  portable photo booth and traveling printing facility as they take photographs of
+                  people around the country. With that inspiration, they also create special colossal
+                  mural pictures of individuals, communities and places they want to honor and
+                  celebrate.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#FacesTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="FacesTrailer" tabindex="-1" aria-labelledby="FacesTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="FacesTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AoIiH6xZZIk"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM FIVE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>The Thin Blue Line</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-thin.jpg">
+                  <br><strong>Director: Errol Morris</strong>
+                  <br>USA 1988 1h 41m
+                  <br>English (15)
+                  <br>
+                  Errol Morris's unique documentary dramatically re-enacts the crime scene and investigation of a police
+                  officer's murder in Dallas, Texas. A film that successfully argued that a man was wrongly convicted
+                  for murder by a corrupt justice system in Dallas County, Texas. Morris implies that the DA's and the
+                  judge's desire for the death penalty in this case (for which Harris would have been ineligible because
+                  of his youth) made Adams a scapegoat on whom to pin this heinous crime.
+
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#ThinTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ThinTrailer" tabindex="-1" aria-labelledby="ThinTrailer" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ThinTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Mnlq0TurT3c"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM SIX-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>The Saviour for Sale</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-saviour.jpg">
+                  <br><strong>Director: Antoine Vitkine</strong>
+                  <br>France 2021 1h 35m
+                  <br>French/English (Unrated)
+                  <br>
+                  Salvator Mundi (The Savior of the World) became the world's most expensive painting when it was sold
+                  at Christie's for $450 million in 2017. Attributed to Leonardo da Vinci, the painting unleashed
+                  passions while revealing the excesses of our time. But is it really the work of the Italian genius, or
+                  one of the greatest scams in the history of art? A modern tale of globalization, the documentary
+                  delves into the secrets of the art world and explores the influence that one painting can exert on
+                  personal and geopolitical interests
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#SaviourTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="SaviourTrailer" tabindex="-1" aria-labelledby="SaviourTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="SaviourTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bdL40JdeQaI"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item" id="accordionTwo">
+        <h2 class="accordion-header" id="shorts">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Shorts
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="shorts"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row">
+
+              <!--FILM ONE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Hunger Ward</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-hunger.jpg">
+                  <br><strong>Director: Skye Fitzgerald</strong>
+                  <br>USA 2020 40m
+                  <br>English (Unrated)
+                  <br>Filmed from inside two of the most active therapeutic feeding centers in Yemen, HUNGER WARD
+                  documents two female health care workers fighting to thwart the spread of starvation against the
+                  backdrop of a forgotten war. The film provides an unflinching portrait of Dr. Aida Alsadeeq and Nurse
+                  Mekkia Mahdi as they try to save the lives of hunger-stricken children within a population on the
+                  brink of famine.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#HungerTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="HungerTrailer" tabindex="-1" aria-labelledby="HungerTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="HungerTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-ahnzXZ3MCM"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM TWO-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Do Not Split</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-split.jpg">
+                  <br><strong>Director: Anders Hammer</strong>
+                  <br>Norway/USA 2020 35m
+                  <br>Cantonese/Mandarin (Unrated)
+                  <br>In 2019 Hong Kong was rocked by the largest protests since Britain handed back the area to China
+                  in 1997. This is the story of the protests, told through a series of demonstrations by local
+                  protesters that escalate into conflict when highly armed police appear on the scene.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#SplitTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="SplitTrailer" tabindex="-1" aria-labelledby="SplitTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="SplitTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QDz1WVUHim4"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM THREE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Colette</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-colette.jpg">
+                  <br><strong>Director: Anthony Giacchino</strong>
+                  <br>USA 2020 24m
+                  <br>French (Unrated)
+                  <br>
+                  For 74-years, former French Resistance member Colette Marin-Catherine refused to step foot in Germany.
+                  That changes when a young history student named Lucie enters her life and convinces her to visit the
+                  concentration camp where the Nazis killed her brother.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#ColetteTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ColetteTrailer" tabindex="-1" aria-labelledby="ColetteTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ColetteTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/J7uBf1gD6JY"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <!--FILM FOUR-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>A Love Song for Latasha</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-latasha.jpg">
+                  <br><strong>Directors: Sophia Nahli Allison</strong>
+                  <br>USA 2007 19m
+                  <br>English (PG)
+                  <br>AA Love Song For Latasha is a dreamlike hybrid documentary in conversation with the past and the
+                  present to reimagine a more nuanced narrative of Latasha Harlins than standard archival practises have
+                  captured by excavating intimate and poetic memories shared by her cousin and best friend.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#LatashaTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="LatashaTrailer" tabindex="-1" aria-labelledby="LatashaTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="LatashaTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xCvjaaqqVzU"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM FIVE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>A Concerto Is a Conversation</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-concerto.jpg">
+                  <br><strong>Directors: Ben Proudfoot & Kris Bowers</strong>
+                  <br>USA 2020 13m
+                  <br>English (Unrated)
+                  <br>
+                  Packing a sweet emotional punch in the shortest running time of the group, this tender familial
+                  history is framed as a conversation between the filmmaker, composer Kris Bowers, and his grandfather,
+                  Horace Bowers (referred to in the film simply as “Grandaddy”). As Kris prepares for the debut of a new
+                  composition, Horace shares his journey from Jim Crow-era Florida to Los Angeles, where he started a
+                  dry-cleaning business by applying for loans by mail.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#ConcertoTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ConcertoTrailer" tabindex="-1" aria-labelledby="ConcertoTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ConcertoTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/LoEZR5miMvo"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM SIX-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>The Application</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-application.jpg">
+                  <br><strong>Director: Gina Moxley</strong>
+                  <br>Ireland 2020 13m
+                  <br>English (Unrated)
+                  <br>
+                  A documentary about freelance theatre artists' experiences of making applications during lockdown: the
+                  emotional investment, the bullshit, the hope, the absolute despair. This a portrait of what it takes
+                  to make a thing, to stay alive – the stuff we never see.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#ApplicationTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ApplicationTrailer" tabindex="-1" aria-labelledby="ApplicationTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ApplicationTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/0_Pi7QXQprg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item" id="accordionThree">
+        <h2 class="accordion-header" id="irishMade">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Irish-Made
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="irishMade"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row">
+
+              <!--FILM ONE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Older Than Ireland</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-older.jpg">
+                  <br><strong>Director: Alex Fegan</strong>
+                  <br>Ireland 2015 1h 21m
+                  <br>English (12A)
+                  <br>A landmark documentary that tells the story of a hundred years of a life as seen through the eyes
+                  of thirty Irish men and women aged 100 or over. Often funny and at times poignant, the film explores
+                  each centenarian's journey, from their birth at the dawn of Irish independence to their life as a
+                  centenarian in modern day Ireland.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#OlderTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="OlderTrailer" tabindex="-1" aria-labelledby="OlderTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="OlderTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/WjSBDE2dKm8"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM TWO-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Four Seasons in a Day</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-four.jpg">
+                  <br><strong>Director: Annabel Verbeke</strong>
+                  <br>Ireland/Belgium 2021 1h 15m
+                  <br>English (Unrated)
+                  <br>The crossing by ferry on a lough between Ireland and Northern Ireland, obliges the passengers to
+                  reflect on the future form of the frontier, somewhere hidden in the sea. This film is not the next
+                  journalistic attempt to analyse or depict Brexit, but a universal and sustainable portrait of a moment
+                  in history where people are requested to think about their identity, who they are, where they come
+                  from and what side of the camp they chose.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#FourTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="FourTrailer" tabindex="-1" aria-labelledby="FourTrailer" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="FourTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JrHSol96B3s"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM THREE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Murdair Mhám Trasna</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-murder.jpg">
+                  <br><strong>Director: Colm Bairéad</strong>
+                  <br>Ireland 2018 1h 53m
+                  <br>Irish (Unrated)
+                  <br>
+                  A feature length docudrama recounting the infamous brutal slaying in 1882 of a family in the remote
+                  village of Mám Trasna, the West of Ireland.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#MurderTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MurderTrailer" tabindex="-1" aria-labelledby="MurderTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="MurderTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oAfntAh5BTo"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <!--FILM FOUR-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Breaking Out</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-breaking.jpg">
+                  <br><strong>Director: Michael McCormack</strong>
+                  <br>Ireland 2019 1hr 25m
+                  <br>English (12A)
+                  <br>Fergus O’Farrell was the charismatic voice of Interference, one of the most influential bands on
+                  the Irish music scene in the 80s and 90s. Although diagnosed with muscular dystrophy at a young age,
+                  Fergus did not define himself by his condition nor allow it to limit his musical pursuits. The film
+                  follows him from his teenage days in Dublin to Radio City Music Hall and home to West Cork where he
+                  struggles to record his final album.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#BreakingTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="BreakingTrailer" tabindex="-1" aria-labelledby="BreakingTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="BreakingTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bRVwQN3UXVI"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM FIVE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Songs for While I'm Away</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-phil.jpg">
+                  <br><strong>Director: Emer Reynolds</strong>
+                  <br>Ireland 2020 1h 52m
+                  <br>English (15)
+                  The story of how a young black boy from working class 1950's Dublin, became
+                  Ireland's Greatest Rock Star. As lead singer of Thin Lizzy, Phil Lynott was a
+                  songwriter, a poet, a dreamer, a wildman.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#PhilTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="PhilTrailer" tabindex="-1" aria-labelledby="PhilTrailer" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="PhilTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mybqnHaWHcM"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM SIX-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>I, Dolours</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-dolours.jpg">
+                  <br><strong>Diretor: Maurice Sweeney</strong>
+                  <br>Ireland 2018 1h 22m
+                  <br>English (15)
+                  <br>
+                  Documentary about Dolours Price, one of very few women who rose to the top of the
+                  IRA and who was involved in bombings during the Troubles in the 1970s.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#DoloursTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="DoloursTrailer" tabindex="-1" aria-labelledby="DoloursTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="DoloursTrailer">View Trailer</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YyJAIrbZE48"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item" id="accordionFour">
+        <h2 class="accordion-header" id="familyFriendly">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            Family Favourites
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="familyFriendly"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <div class="row">
+
+              <!--FILM ONE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>The Bad Kids</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-bad.jpg">
+                  <br><strong>Directors: Keith Fulton & Louis Pepe</strong>
+                  <br>USA 2016 1h 41m
+                  <br>English (Unrated)
+                  <br>Located in an impoverished Mojave Desert community, Black Rock Continuation High School is one
+                  of California's alternative schools for students at risk of dropping out. Every student here has
+                  fallen so far behind in credits that they have no hope of earning a diploma at a traditional high
+                  school. Black Rock is their last chance.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#BadTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="BadTrailer" tabindex="-1" aria-labelledby="BadTrailer" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="BadTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/-gHRZKRuuRk"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM TWO-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Microcosmos</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-micro.jpg">
+                  <br><strong>Directors: Claude Nuridsany & Marie Pérennou</strong>
+                  <br>France 1996 1h 20m
+                  <br>English (U)
+                  <br>A documentary of insect life in meadows and ponds, using incredible close-ups, slow motion,
+                  and time-lapse photography. It includes bees collecting nectar, ladybugs eating mites, snails
+                  mating, spiders wrapping their catch, a scarab beetle relentlessly pushing its ball of dung
+                  uphill, endless lines of caterpillars, an underwater spider creating an air bubble to live in, and
+                  a mosquito hatching
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#MicroTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="MicroTrailer" tabindex="-1" aria-labelledby="MicroTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="MicroTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/76R2EKEnoJQ"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM THREE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Encounters at the End of the World</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/End_of.jpg">
+                  <br><strong>Director: Werner Herzog</strong>
+                  <br>USA 2007 1h 39m
+                  <br>English/Spanish (U)
+                  <br>Werner Herzog takes his camera to Antarctica where we meet the odd men and women who have
+                  dedicated their lives to furthering the cause of science in treacherous conditions. A scientist
+                  studies neutrinos, which are everywhere, yet elusive; he likens them to spirits. A researcher's
+                  night-time performance art includes contorting her body into a luggage bag. We also meet an
+                  individualist penguin, who breaks away from the other birds to run toward the mountains, facing
+                  certain death.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#EndTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="BashirTrailer" tabindex="-1" aria-labelledby="EndTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="EndTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MImYM87jOtU"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+
+              <!--FILM FOUR-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>My Octopus Teacher</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-places.jpg">
+                  <br><strong>Directors: Pippa Ehrlich & James Reed</strong>
+                  <br>South Africa 2020 1h 25m
+                  <br>English (U)
+                  <br>After years of swimming every day in the freezing ocean at the tip of Africa, Craig Foster
+                  meets an unlikely teacher a young octopus who displays remarkable curiosity. Visiting her den and
+                  tracking her movements for months on end he eventually wins the animal's trust and they develop a
+                  never before seen bond between human and wild animal.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#OctTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="OctTrailer" tabindex="-1" aria-labelledby="OctTrailer" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="OctTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/3s0LTDhqe5A"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM FIVE-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Science Fair</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-science.jpg">
+                  <br><strong>Directors: Cristina Costantini & Darren Foster</strong>
+                  <br>USA 2018 1h 30m
+                  <br>English (12A)
+                  <br>Nine high school students from disparate corners of the globe navigate rivalries, setbacks,
+                  and hormones on their quest to win the international science fair. Only one can be named "Best in
+                  Fair."
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#ScienceTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="ScienceTrailer" tabindex="-1" aria-labelledby="ScienceTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="ScienceTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/AJdYLAc-gzM"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--FILM SIX-->
+              <div class="col-md-4">
+                <p class="text-center m-2">
+                  <h4>Spellbound</h4>
+                  <img class="mx-auto d-block" width="50%" src="images/poster-spell.jpg">
+                  <br><strong>Director: Jeffrey Blitz</strong>
+                  <br>USA 2002 1h 37m
+                  <br>English/Spanish (Unrated)
+                  <br>This documentary follows 8 teens and pre-teens as they work their way toward the finals of the
+                  Scripps Howard national spelling bee championship in Washington D.C. All work quite hard and
+                  practice daily, first having to win their regional championship before they can move on. The
+                  competitors not only work hard to get to the finals but face tremendous pressure as the original
+                  group of over 250 competitors is whittled down and the words they must spell get ever more
+                  difficult.
+                  <br>
+                  <br>
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#SpellTrailer">
+                    View Trailer
+                  </button>
+                </p>
+
+                <!-- Modal -->
+                <div class="modal fade" id="SpellTrailer" tabindex="-1" aria-labelledby="SpellTrailer"
+                  aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="SpellTrailer">View Trailer
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive"></div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/DkbJWZvBVvk"
+                          title="YouTube video player" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen></iframe>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--FULL TIMETABLE-->
+
+  <div id="timetable" class="container mt-3">
+    <h1>Full Timetable</h1>
+    <table class="table table-bordered table-hover table-sm table-dark">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Screening Time</th>
+          <th>Venue</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <h4>Monday 20th</h4>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Hunger Ward</td>
+          <td>17:15 <i class="bi bi-chat-left-dots"></i></td>
+          <td>Mountbellew Community Centre 1</td>
+          <td>Open Captioned</td>
+        </tr>
+        <tr>
+          <td>Do Not Split</td>
+          <td>17:15 <i class="bi bi-chat-right-quote"></i></td>
+          <td>Ballinasloe Library 2</td>
+          <td>Subtitled</td>
+        </tr>
+        <tr>
+          <td>The Bad Kids</td>
+          <td>18:00</td>
+          <td>Westside Library 2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Microcosmos</td>
+          <td>18:00 <i class="bi bi-chat-left-dots"></i><i class="bi bi-headphones"></i></td>
+          <td>Ballinasloe Library 1</td>
+          <td>Open Captioned, Audio Description</td>
+        </tr>
+        <tr>
+          <td>Older Than Ireland</td>
+          <td>19:50 <i class="bi bi-chat-left-dots"></i> <i class="bi bi-headphones"></i></td>
+          <td>Westside Library 1</td>
+          <td>Open Captioned, Audio Description</td>
+        </tr>
+        <tr>
+          <td>Four Seasons in a Day</td>
+          <td>19:50 <i class="bi bi-people"></i></td>
+          <td>Ballinasloe Library 2</td>
+          <td>Followed by a Q&A with cast</td>
+        </tr>
+        <tr>
+          <td>The Thin Blue Line</td>
+          <td>21:00 <i class="bi bi-cc"></i></td>
+          <td>Westside Library 2</td>
+          <td>Closed Captioned</td>
+        </tr>
+        <tr>
+          <td>Amy</td>
+          <td>21:30 <i class="bi bi-chat-left-dots"></i></td>
+          <td>Ballinasloe Library 1</td>
+          <td>Open Captioned</td>
+        </tr>
+        <tr>
+          <!--DAY 2-->
+        <tr>
+          <td>
+            <h4>Tuesday 21st</h4>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Colette</td>
+          <td>17:30</td>
+          <td>Mountbellew Community Centre 2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>A Love Song for Latasha</td>
+          <td>17:30</td>
+          <td>Westside Library 1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Encounters at the End of the World</td>
+          <td>18:00 <i class="bi bi-chat-left-dots"></i> <i class="bi bi-headphones"></i></td>
+          <td>Ballinasloe Library 1</td>
+          <td>Open Captioned, Audio Description</td>
+        </tr>
+        <tr>
+          <td>My Octopus Teacher</td>
+          <td>18:00</td>
+          <td>Mountbellew Community Centre 1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Murdair Mhám Trasna</td>
+          <td>19:50 <i class="bi bi-chat-right-quote"></i></td>
+          <td>Westside Library 2</td>
+          <td>Subtitled</td>
+        </tr>
+        <tr>
+          <td>I, Dolours</td>
+          <td>19:50 <i class="bi bi-person"></i></td>
+          <td>Mountbellew Community Centre 2</td>
+          <td>Followed by a Q&A with Director</td>
+        </tr>
+        <tr>
+          <td>Places, Faces</td>
+          <td>21:30 <i class="bi bi-chat-left-dots"></i> <i class="bi bi-headphones"></i></td>
+          <td>Westside Library 1</td>
+          <td>Open Captioned, Audio Description</td>
+        </tr>
+        <tr>
+          <td>Senna</td>
+          <td>21:45 <i class="bi bi-chat-right-quote"></i></td>
+          <td>Mountbellew Community Centre 1</td>
+          <td>Subtitled</td>
+        </tr>
+
+        <!--DAY 3-->
+        <tr>
+          <td>
+            <h4>Wednesday 22nd</h4>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>A Concerto Is a Conversation</td>
+          <td>17:30</td>
+          <td>Westside Library 2</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>The Application</td>
+          <td>17:30 <i class="bi bi-award"></i></td>
+          <td>Ballinasloe Library 2</td>
+          <td>Irish Premiere</td>
+        </tr>
+        <tr>
+          <td>Science Fair</td>
+          <td>18:00 <i class="bi bi-chat-left-dots"></i> <i class="bi bi-headphones"></i></td>
+          <td>Westside Library 1</td>
+          <td>Open Captioned, Audio Description</td>
+        </tr>
+        <tr>
+          <td>Spellbound</td>
+          <td>18:00 <i class="bi bi-chat-left-dots"></i></td>
+          <td>Mountbellew Community Centre 2</td>
+          <td>Open Captioned</td>
+        </tr>
+        <tr>
+          <td>Breaking Out</td>
+          <td>19:50 <i class="bi bi-chat-right-quote"></i></td>
+          <td>Ballinasloe Library 1</td>
+          <td>Subtitled</td>
+        </tr>
+        <tr>
+          <td>Songs for While I'm Away</td>
+          <td>19:50</td>
+          <td>Mountbellew Community Centre 1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Waltz With Bashir</td>
+          <td>21:30 <i class="bi bi-chat-right-quote"></i></td>
+          <td>Mountbellew Community Centre 2</td>
+          <td>Subtitled</td>
+        </tr>
+        <tr>
+          <td>The Saviour for Sale</td>
+          <td>21:45 <i class="bi bi-chat-right-quote"></i> <i class="bi bi-award"></i></td>
+          <td>Westside Library 1</td>
+          <td>Irish Premiere, Subtitled</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--VENUE SECTION-->
+  <div id="venues" class="display-4 text-center p-4 m-2">
+    <h1>Venues</h1>
+    <div class="container card-group">
+      <div class="card">
+        <img class="card-img-top" src="images/ballinasloe.jpg" alt="Ballinasloe Library">
+        <div class="card-body">
+          <h5 class="card-title">Ballinasloe Library</h5>
+          <p class="card-text">Society Street
+            <br>Ballinasloe
+            <br>Co. Galway
+            <br>Ireland
+            <br>H53 T320</p>
+          <a href="https://www.librariesireland.ie/local-centres/ballinasloe-library" target="_blank"
+            class="btn btn-outline-light">More
+            info</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/mountbellew.jpg" alt="Mountbellew Community Centrep">
+        <div class="card-body">
+          <h5 class="card-title">Mountbellew Community Centre</h5>
+          <p class="card-text">Ballygar Road
+            <br>Mountbellew
+            <br>Co. Galway
+            <br>Ireland
+            <br>H53 R8E8</p>
+          <a href="https://www.facebook.com/Mountbellew-Community-Centre-105497265171659/" target="_blank"
+            class="btn btn-outline-light">More info</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="images/westside.jpg" alt="Westside Library">
+        <div class="card-body">
+          <h5 class="card-title">Westside Library</h5>
+          <p class="card-text">Seamus Quirke Road
+            <br>Westside
+            <br>Galway
+            <br>Ireland
+            <br>H91 Y067</p>
+          <a href="https://opening-hours-ireland.com/06353/Westside_Library" target="_blank"
+            class="btn btn-outline-light">More
+            info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--SPONSORS-->
+  <div class="sponsors">
+    <h1>Kindly Supported By</h1>
+    <div class="container">
+      <div class="d-flex justify-content-center">
+        <div class="column"><img src="images/arts-council.png"></div>
+        <div class="column"><img src="images/creative-europe.png"></div>
+        <div class="column"><img src="images/culture-ireland.png"></div>
+        <div class="column"><img src="images/dept.png"></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="column"><img src="images/flirt.png"></div>
+        <div class="column"><img src="images/libraries.png"></div>
+        <div class="column"><img src="images/galway-city.png"></div>
+        <div class="column"><img src="images/electric-ireland.png"></div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="column"><img src="images/galway-county.png"></div>
+        <div class="column"><img src="images/galwaydaily.png"></div>
+        <div class="column"><img src="images/nuig.png"></div>
+        <div class="column"><img src="images/screen.png"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--SOCIALS-->
+  <div class="row justify-content-center p-4">
+    <a href="https://twitter.com/home" target="_blank" class="fa fa-twitter"></a>
+    <a href="https://www.instagram.com/" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+  </div>
+
+  <!--FOOTER-->
+  <div id="address" class="container">
+    <footer class="p-3">
+      <p class="text-center text-muted">
+        Village Hall
+        <br>East Galway Village
+        <br>Co. Galway
+        <br>H91 E00G
+        <br>info@learo.ie
+        <br>09096 493333
+        <br></b>&copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script> LDFF</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
