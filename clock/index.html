@@ -14,7 +14,7 @@
         <style>
             :root {
                 --main-logo-col: #ed018e;
-                --col-1: #034279;
+                --col-1: #3E0EA7;
                 --col-2: #99b2dd;
                 --col-3: #1a1a1a;
                 --col-4: #3e0ea7;
@@ -30,38 +30,33 @@
                 height: 100vh;
                 width: 100vw;
                 padding: 30px;
-            }
-            .main-logo {
-                width: 100%;
-                margin: 0 auto;
-                display: block;
-            }
+          
             .time-span {
                 font-size: 350px;
                 font-weight: bold;
                 color: var(--main-logo-col);
                 color:#ed018e;
-                line-height: 400px;
+                line-height: 390px;
             }
 
             #date-span {
                 font-size: 50px;
                 font-weight: bold;
                 color: var(--col-1);
-                color:#3e0ea7;
+                color:#3E0EA7;
             }
 
             #sunrise-sunset {
                 font-size: 50px;
                 font-weight: bold;
                 color: var(--col-4);
-                color:#e7beae;
+                color:#99b2dd;
             }
             #weather {
                 font-size: 50px;
                 font-weight: bold;
                 color: var(--col-2);
-                color:#99b2dd;
+                color:#ed018e;
             }
 
             #weather-icon {
@@ -73,7 +68,7 @@
             @media (max-width: 1500px) {
                 .time-span {
                     font-size: 300px;
-                    line-height: 350px;
+                    line-height: 340px;
                 }
             }
             @media (max-width: 1275px) {
@@ -91,12 +86,11 @@
             @media (max-width: 1050px) {
                 .time-span {
                     font-size: 200px;
-                    line-height: 250px;
+                    line-height: 230px;
                 }
                 #date-span, #sunrise-sunset, #weather {
                     font-size: 30px;
-                }
-                
+                }      
             }
             
             .ticker {
@@ -109,6 +103,8 @@
                 width: 100%;
                 border: none;
                 height: calc(33vw / 2912 * 1218);
+                vertical-align: right;
+                page-title { display: none; 
             }
         </style>
 
@@ -165,7 +161,7 @@
             }
 
             body {
-                padding-bottom: 5rem;
+                padding-bottom: 4rem;
             }
 
             h1,
@@ -179,6 +175,7 @@
     <body>
         <div class="container-fluid">
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
             <div class="row">
                  <div class="col-6">
@@ -188,6 +185,15 @@
                     </div>
             </div>
 >>>>>>> parent of dfbad23 (Update index.html)
+=======
+            <div class="row">
+                 <div class="col-6">
+                        <div class="col-12">
+                            <iframe id="now-widget" src="https://flirtfm.ie/now-and-next/" scrolling="no" page-title="0" frameborder="0"></iframe>
+                        </div>
+                    </div>
+            </div>
+>>>>>>> parent of 964661d (Update index.html)
                        <div class="row">
                 <div class="col-12">
                     <a href="https://time.is/Galway" id="time_is_link" rel="nofollow" style="font-size: 36px" hidden>Time in Galway:</a>
@@ -218,6 +224,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="ticker-wrap">
+<<<<<<< HEAD
                         <div class="ticker" id="ticker-holder"></div>
                     </div>
                 </div>
@@ -228,6 +235,9 @@
                         <div class="col-12">
                             <iframe id="now-widget" src="https://www.flirtfm.ie/layouts/comingup" title="Live Now and Coming Up" scrolling="no" frameborder="0"></iframe>
                         </div>
+=======
+                        <div class="ticker" id="ticker-holder"></div>    
+>>>>>>> parent of 964661d (Update index.html)
                     </div>
                 </div>
                 <div class="col-4 text-center">
@@ -249,13 +259,13 @@
                 ["Kale", "Mushrooms", "Parsnip", "Lettuce", "Leeks", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts"],
                 ["Spinach", "Mushrooms", "Rhubarb", "Lettuce", "Cauliflower", "Carrot", "Cabbage"],
                 ["Asparagus", "New Potatoes", "Pak Choi", "Radish", "Scallions", "Aubergine", "Mushrooms", "Tomatoes", "Cucumber", "Peppers", "Rhubarb", "Lettuce", "Cauliflower", "Cabbage", "Thyme", "Parsley"],
-                ["Asparagoose", "Pak Choi", "Radish", "RapScallions", "Fronch Beans", "Broad Beans", "Beetroot", "Aubergine", "Mushrooms", "Tomato", "Cucumbers", "Peppers", "Rhubarb", "Lettuce", "Cauliflower", "Cabbage", "Broccolis", "Strawberry", "Thyme", "Chives", "Parsley"],
+                ["Asparagus", "Pak Choi", "Radish", "Scallions", "French Beans", "Broad Beans", "Beetroot", "Aubergine", "Mushrooms", "Tomato", "Cucumbers", "Peppers", "Rhubarb", "Lettuce", "Cauliflower", "Cabbage", "Broccoli", "Strawberry", "Thyme", "Chives", "Parsley"],
                 ["Pak Choi", "Radish", "Scallions", "Courgette", "Peas", "French Beans", "Broad Beans", "Aubergine", "Mushrooms", "Tomato", "Cucumbers", "Peppers", "Rhubarb", "Lettuce", "Celery", "Cauliflower", "Cabbage", "Broccoli", "Blackcurrants", "Loganberries", "Gooseberries", "Strawberry", "Raspberry", "Thyme", "Chives", "Parsley"],
                 ["New Potatoes", "Marrow", "Pak Choi", "Radish", "Scallions", "Courgette", "Peas", "French Beans", "Broad Beans", "Beetroot", "Aubergine", "Mushrooms", "Tomato", "Cucumbers", "Peppers", "Rhubarb", "Parsnip", "Onion", "Lettuce", "Celery", "Cauliflower", "Carrot", "Cabbage", "Broccoli", "Blackcurrants", "Blueberry", "Strawberry", "Raspberry", "Thyme", "Chives", "Parsley"],
                 ["Rooster Potatoes", "Marrow", "Pak Choi", "Radish", "Scallions", "Courgette", "Peas", "Kale", "French Beans", "Beetroot", "Mushrooms", "Tomato", "Cucumbers", "Peppers", "Rhubarb", "Parsnip", "Onion", "Lettuce", "Leeks", "Celery", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts", "Broccoli", "Strawberry", "Raspberry", "Thyme", "Chives", "Parsley"],
-                ["Rooster Potatoes", "Marrow", "Pak Choi", "Radish", "Scallions", "Kale", "Celeriac", "Beetroot", "Mushrooms", "Tomato", "Peppers", "Parsnip", "Onion", "Lettuce", "Leeks", "Celery", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts", "Broccoli", "Strawberry", "Raspberry", "Apples", "Bramley Apples", "Thyme", "Chives", "Parsley"],
-                ["Rooster Potatoes", "Pak Choi", "Spinach", "Kale", "Celeriac", "Beetroot", "Mushrooms", "Parsnip", "Lettuce", "Leeks", "Celery", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts", "Broccoli", "Thyme", "Parsley"],
-                ["Pak Choi", "Kale", "Celeriac", "Beetroot", "Mushrooms", "Parsnip", "Lettuce", "Leeks", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts", "Thyme", "Parsley"]
+                ["Rooster Potatoes", "Pumpkin", "Marrow", "Pak Choi", "Radish", "Scallions", "Kale", "Pumpkin", "Celeriac", "Beetroot", "Mushrooms", "Tomato", "Peppers", "Parsnip", "Pumpkin", "Onion", "Lettuce", "Leeks", "Celery", "Cauliflower", "Pumpkin", "Carrot", "Cabbage", "Brussel Sprouts", "Broccoli", "Strawberry", "Raspberry", "Apples", "Bramley Apples", "Thyme", "Chives", "Parsley"],
+                ["Rooster Potatoes", "Pak Choi", "Spinach", "Kale :(", "Celeriac", "Beetroot", "Mushrooms", "Parsnip", "Lettuce", "Leeks", "Celery", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts", "Broccoli", "Thyme", "Parsley"],
+                ["Pak Choi", "Kale", "Celeriac", "Beetroot", "Brussel Sprouts", "Mushrooms", "Parsnip", "Lettuce", "Leeks", "Brussel Sprouts", "Cauliflower", "Carrot", "Cabbage", "Brussel Sprouts", "Thyme", "Parsley"]
             ];
 
             const vegTickerSpeed = 6; // higher number = slower speed
